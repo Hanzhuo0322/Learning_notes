@@ -1,11 +1,9 @@
 React.js教程: React State
 ====
 
-----
 和properties一样,state(状态)影响着一个组件的行为和渲染. 但与properties不同的是,不允许通过JSX来定义组件的state.
 
-##Properties vs. State 属性 VS 状态
-
+## Properties vs. State 属性 VS 状态
 
 当组件被创建的时候properties通过JSX或者纯JS被定义. state, 只可以在组件内部被定义. 这是第一个也是最重要的区别.
 
@@ -15,7 +13,7 @@ React.js教程: React State
 
 state应该被当做私有数据.
 
-##Setting Initial State 设置初始状态值
+## Setting Initial State 设置初始状态值
 
 在使用state之前我们需要声明state的初始值, 可以通过getInitialState()函数返回一个对象.
 
@@ -47,7 +45,7 @@ state应该被当做私有数据.
 	
 getInitialState()这个函数告诉组件在第一轮渲染的时候什么值是可用的直到state的值被改变.
 	
-##Setting State 设置状态
+## Setting State 设置状态
 	
 只可以从组件的内部设置state的值.就像上面所说的, 我们应该看待state为私有数据, 但是你也可以去更新它.
 	
@@ -83,7 +81,7 @@ getInitialState()这个函数告诉组件在第一轮渲染的时候什么值是
 
 直到组件被重新渲染你是看不到新的state的值的. 这种设置state的值的方法最好只用在组件的渲染和行为依赖于外部的因素.
 
-##Replacing State 替换状态
+## Replacing State 替换状态
 
 使用replaceState()也是可以替换state的值的.
 
@@ -113,7 +111,7 @@ getInitialState()这个函数告诉组件在第一轮渲染的时候什么值是
 
 当你想要清除一些已经在state里面存在的值并且追加一些新值的时候可以使用replaceState()
 
-##Avoiding State 避免使用状态
+## Avoiding State 避免使用状态
 
 尽可能减少使用state.当你使用state的时候, 你承担着组件的渲染和行为会出现错误的风险.
 

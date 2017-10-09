@@ -1,2 +1,5 @@
 # Learning_notes
-一些学习笔记
+
+React 初学者
+
+一些React学习笔记

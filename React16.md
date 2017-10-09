@@ -84,7 +84,7 @@ Facebook正在以流行的JavaScript框架React为基础开发一个全新的架
 
 >重点在于，Stack Reconciler始终会一次性地同步处理整个组件树。Stack Reconciler无法暂停，因此如果更新较为深入并且可用CPU时间有限，这种做法并非最优化的。
 
-与之相对的**Fiber Reconciler**则有着截然不同的目标：
+与之相对的 **Fiber Reconciler** 则有着截然不同的目标：
 
 >1. 能够将可中断的任务拆分成块。
 >
@@ -96,4 +96,4 @@ Facebook正在以流行的JavaScript框架React为基础开发一个全新的架
 >
 >5. 为错误边界提供了更好的支持。
 
-简单来说，此时不在需要等待变更传播到整个组件树，**React Fiber**可以知道如何时不时暂停一下，检查是否有其他更重要的更新。这种调度能力主要基于**requestIdleCallback**的使用，而这是一种W3C候选推荐标准。
+简单来说，此时不在需要等待变更传播到整个组件树， **React Fiber** 可以知道如何时不时暂停一下，检查是否有其他更重要的更新。这种调度能力主要基于 **requestIdleCallback** 的使用，而这是一种W3C候选推荐标准。
